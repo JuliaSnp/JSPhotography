@@ -1,0 +1,317 @@
+
+
+body{
+	font-family: Abel, Verdana, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	margin: 0;
+	padding-right: 0;
+	background-color:#fff;
+}
+
+
+/* Positioning logo, socil and nav in one line*/
+.container{
+  margin:auto; /*horizontally centres within it's container*/
+  overflow:hidden;
+  width: 90%; /*no scroll*/
+}
+
+h1{
+	margin-bottom: 0;
+	float: left;
+	padding-right: 40px;
+	color: black;
+}
+
+#brand .contact{
+	display: inline-block;
+	margin-right: 50px;
+	margin-left: 0;	
+	float:left;
+	
+}
+
+.navigation{
+	
+	display:inline;
+
+}
+
+#social-buttons{
+	
+	float:right;
+	margin-left: 30px;
+	margin-top: 25px;
+	margin-right: 0px;
+	display: block;
+	float: left;
+}
+
+#social ul li a{
+	display: inline;
+	float: right;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+/*Navigation*/
+nav{
+	display:inline-block;
+	float:left;
+	padding-top: 35px;
+	
+}
+
+
+ul { /*by default ul has padding and margin*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    //height: 0;
+}
+
+
+
+header li a{ /*links in header*/
+  display: inline;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 14px 12px;
+
+}
+
+
+
+header li{
+  float: left;
+}
+
+header ul ul{
+	margin:0;
+}
+
+li a:hover {
+    font-weight: bold;
+}
+.active-link {
+  font-weight: bold;
+  background-color: white;
+  tap-highlight-color: transparent;
+}
+	
+/*Settings for all images*/
+
+img {
+  margin:auto; /*horizontally centres within it's container*/
+  width:100%;  
+  display:block; 
+  height: auto;
+}
+
+.contact{
+	margin-left: 57px;
+	padding-left: 20px;
+}
+
+p{
+	padding: 5px 0 5px 0;
+}
+
+article{
+	margin:20px 200px 100px 20px;
+	padding-left: 46px;
+}
+	
+
+
+textarea{
+	
+	width: 287px;
+	height: 200px;
+	resize: none;
+}
+
+input[name="name"]{
+	height:44px;
+}
+
+input[name="email"]{
+
+	height: 44px;
+}
+
+
+
+
+footer{
+	margin-left: 10px;
+}
+
+#stay-down{
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+
+/* Media Queries*/
+
+
+@media screen and (max-width: 1180px) { 
+    #brand{ /*takes up the whole line, so nav and social move down together*/
+	width:100%;
+}
+
+article{
+	padding-left: 0px;
+	margin-right: 20px;
+}
+
+
+@media screen and (max-width: 835px){
+
+	#brand{
+	width:auto;
+}
+
+#social-buttons form{
+	display: block;
+	float: right;
+	width: 100%;
+	margin-top: 0;
+}
+.burger-nav{
+	display: inline-block;
+	height:40px;
+	width: 100%;
+	background: url(images/burger.png) no-repeat 98% center;*/
+	cursor: pointer;
+	float:right;
+}  
+
+
+
+nav{
+	margin: 0;
+	padding:0;
+	float: right;
+	width: 100%
+}
+
+
+header nav ul{
+	overflow: hidden;
+	height: 0;
+	float: left;
+	width:100%;
+}
+
+
+header nav ul.open{
+	height: auto;
+}
+
+header nav ul li{
+	float: none;
+	text-align: left;
+	width: 100%;
+	margin: 0;
+}
+
+header nav ul li a{
+	padding: 10px;
+	border-bottom: 1px solid #647838;
+	display: block;
+	margin: 0;
+
+}
